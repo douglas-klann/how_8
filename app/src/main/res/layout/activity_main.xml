@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/selectNeighborhood"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="484dp"
+        android:entries="@array/selectNeighborhood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleMenu"
+        android:layout_width="409dp"
+        android:layout_height="64dp"
+        android:fontFamily="cursive"
+        android:includeFontPadding="true"
+        android:text="Quando Passa?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelNeighborhood"
+        android:layout_width="282dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="20dp"
+        android:text="Selecione o bairro:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/selectNeighborhood"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="147dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:text="Buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectNeighborhood" />
+
+    <TextView
+        android:id="@+id/labelRecDay"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="276dp"
+        android:text="O lixo reciclável será recolhido:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dayRec"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Terça-feira"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelRecDay" />
+
+    <TextView
+        android:id="@+id/dayRec2"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Terça-feira"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelRejDay" />
+
+    <TextView
+        android:id="@+id/labelRejDay"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="140dp"
+        android:text="O lixo rejeito será recolhido:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Quando Passa</string>
+
+    <string-array name="selectNeighborhood">
+        <item>Besenello</item>
+        <item>Cascata</item>
+        <item>Centro</item>
+        <item>Claraiba</item>
+        <item>Espraiado</item>
+        <item>Indaiá</item>
+        <item>João Bayer Sobrinho</item>
+        <item>Mato Queimado</item>
+        <item>Morro da Onça</item>
+        <item>Ponta Fina Sul</item>
+        <item>Salto até Ponte</item>
+        <item>Santo Antonin</item>
+        <item>Trinta Réis</item>
+        <item>Velha</item>
+        <item>Velha de Dentro</item>
+        <item>Vasca</item>
+        <item>Vigolo – Frederico</item>
+    </string-array>
+
+</resources>
